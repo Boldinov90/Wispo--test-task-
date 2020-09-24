@@ -9,12 +9,12 @@
     width: 1520px;
     height: 100vh;
     margin: 0 auto;
-    background-color: aqua;
+    // background-color: aqua;
 }
 
-
+// Шрифты 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-
-
+// Компоненты
+@import "page_comparison/header"
 
 
