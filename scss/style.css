@@ -6,11 +6,10 @@
 }
 
 .container {
-  width: 1520px;
+  width: 1550px;
   height: 100vh;
   margin: 0 auto;
-}
-
-body {
-  background-color: #76a52a;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: aqua;
 }
