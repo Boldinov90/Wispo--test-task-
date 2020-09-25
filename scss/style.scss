@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    // background-color: #F6F6F6;
+    // background-color: #4a7db8;
     // font-family: 'Montserrat', sans-serif;
 }
 // Ограничивающий контейнер 1520px
@@ -19,6 +19,7 @@
 
 // SCSS модули
 @import "page_comparison/header";
+@import "page_comparison/contentHeader";
 @import "page_comparison/content";
 
 
