@@ -13,13 +13,14 @@
 }
 
 .page-comparison__header {
-  background-color: #fff;
+  position: relative;
   width: 100%;
   height: 148px;
+  background-color: #fff;
 }
 
 .page-comparison__header .page-comparison__navigation {
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
 .page-comparison__header .page-comparison__navigation a {
@@ -43,4 +44,18 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
+}
+
+.page-comparison__body {
+  background-color: #F6F6F6;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper {
+  width: 100%;
+  height: 1000px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
