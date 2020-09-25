@@ -6,7 +6,7 @@
 }
 
 .container {
-  width: 1550px;
+  max-width: 1550px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -92,7 +92,8 @@
   margin-top: 20px;
   background: #FFFFFF;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
-  border: none;
+  appearance: none;
+  border: solid 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 50px;
   width: 250px;
@@ -107,4 +108,90 @@
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-select select option {
   color: black;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-select select::after {
+  content: "";
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios {
+  margin-top: 28px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios .page-comparison__radio {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios .page-comparison__radio input {
+  display: none;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios .page-comparison__radio .fake {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #4BB1BC;
+  background-color: #EEF8F9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios .page-comparison__radio .fake::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 11px;
+  width: 11px;
+  background-color: #4BB1BC;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios .page-comparison__radio input:checked + .fake::before {
+  opacity: 1;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-radios .page-comparison__radio .text {
+  margin-left: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object {
+  margin-left: 95px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "btnClose btnClose" "photo categoryText" "photo smartphoneName" "photo costs" "photo buttons";
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .btn-close {
+  grid-area: btnClose;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .photo {
+  grid-area: photo;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .category-text {
+  grid-area: categoryText;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .smartphone-name {
+  grid-area: smartphoneName;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .costs {
+  grid-area: costs;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .buttons {
+  grid-area: buttons;
 }
