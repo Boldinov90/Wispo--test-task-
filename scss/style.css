@@ -50,7 +50,7 @@
   background-color: #F6F6F6;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 38px;
 }
 
 .page-comparison__body .page-comparison__content-wrapper {
@@ -58,4 +58,53 @@
   height: 1000px;
   background-color: #FFFFFF;
   border-radius: 10px;
+  padding-top: 48px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header {
+  display: flex;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-title {
+  display: flex;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-title .page-comparison__title-text {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-title img {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-select select {
+  margin-top: 20px;
+  background: #FFFFFF;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 250px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ACB8CA;
+  padding-left: 20px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-filter .page-comparison__filter-select select option {
+  color: black;
 }
