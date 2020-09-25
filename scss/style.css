@@ -60,6 +60,7 @@
   border-radius: 10px;
   padding-top: 48px;
   padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 60px;
 }
 
@@ -165,33 +166,118 @@
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object {
+  height: 168px;
   margin-left: 95px;
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "btnClose btnClose" "photo categoryText" "photo smartphoneName" "photo costs" "photo buttons";
+  grid-template-rows: 21px auto auto auto 37px;
+  grid-template-areas: "photo btnClose" "photo categoryText" "photo smartphoneName" "photo costs" "photo buttons";
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .btn-close {
   grid-area: btnClose;
+  justify-self: end;
+  cursor: pointer;
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .photo {
+  width: 120px;
+  height: 147px;
   grid-area: photo;
+  align-self: flex-start;
+  margin-top: 21px;
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .category-text {
   grid-area: categoryText;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9A9A9A;
+  align-self: flex-start;
+  margin-left: 29px;
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .smartphone-name {
   grid-area: smartphoneName;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 29px;
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .costs {
   grid-area: costs;
+  display: flex;
+  align-items: center;
+  margin-left: 29px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .costs .cost {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .costs .old-cost {
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: line-through;
+  color: #9A9A9A;
 }
 
 .page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .buttons {
+  margin-left: 29px;
   grid-area: buttons;
+  display: flex;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .buttons .intoTheBasket-button {
+  width: 114px;
+  height: 37px;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .buttons .toBuy-button {
+  margin-left: 21px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__content-header .page-comparison__content-object .buttons .toBuy-button .toBuy-button-text {
+  margin-left: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.page-comparison__body .page-comparison__content-wrapper .page-comparison__line {
+  margin-top: 38px;
+  height: 1px;
+  width: 100%;
+  left: 30px;
+  background-color: #E5E5E5;
 }
