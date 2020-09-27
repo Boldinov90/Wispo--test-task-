@@ -7,6 +7,9 @@
             @media (max-width: 1440px) {
                 grid-template-columns: 340px 370px 370px;
             }
+            @media (max-width: 1160px) {
+                grid-template-columns: 248px 292px 292px;
+            }
         }
         .name__paragraph-title{         
             font-family: Montserrat;
@@ -38,6 +41,9 @@
             @media (max-width: 1440px) {
                 grid-template-columns: 340px 370px 370px;
             }
+            @media (max-width: 1160px) {
+                grid-template-columns: 248px 292px 292px;
+            }
         }    
         .name__paragraph-subtitle{
             margin-left: 7px;
@@ -58,6 +64,9 @@
             color: #000000;
             @media (max-width: 1440px) {
                 width: 291px;
+            }
+            @media (max-width: 1160px) {
+                width: 248px;
             }
         } 
     }

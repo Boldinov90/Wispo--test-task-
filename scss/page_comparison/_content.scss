@@ -12,17 +12,16 @@
         padding-right: 30px;
         padding-bottom: 60px;
         .page-comparison__content-header{
-            // position: relative;
-            // display: flex;
             display: grid; 
             grid-template-columns: 357px 580px 580px;
             grid-template-rows: auto;
             @media (max-width: 1440px) {
                 grid-template-columns: 340px 370px 370px;
             }
-            // @media (max-width: 1440px) {
-            //     height: 365px;
-            // }
+            @media (max-width: 1160px) {
+                // grid-template-columns: 248px 292px 292px;
+                grid-template-columns: 248px auto auto;
+            }
             .page-comparison__content-filter{ 
                 .page-comparison__filter-title{
                     display: flex;
@@ -49,6 +48,9 @@
                         margin-left: 218px;
                         margin-top: 45px;
                         pointer-events: none;
+                        @media (max-width: 1160px) {
+                            margin-left: 201px;
+                        }
                     }
                     select{
                         margin-top: 20px;
@@ -68,6 +70,9 @@
                         line-height: 17px;
                         color:  #ACB8CA;
                         padding-left: 20px;
+                        @media (max-width: 1160px) {
+                            width: 233px;
+                        }
                         option{
                             color: black;
                         }
@@ -122,6 +127,7 @@
             }
             .page-comparison__content-object{
                 height: 168px;
+                // margin-right: 50px;
                 display: grid;
                 grid-template-columns: 149px 261px;
                 grid-template-rows: 21px auto auto auto 37px;
@@ -131,15 +137,25 @@
                                      "photo costs"
                                      "photo buttons";
                 @media (max-width: 1440px) {
+                    height: 371px;
                     grid-template-columns: 133px 149px;
-
                     grid-template-rows: 163px 30px 41px 50px 37px;
                     grid-template-areas: "photo btnClose"
                                          "categoryText categoryText"
                                          "smartphoneName smartphoneName"
                                          "costs costs"
-                                         "buttons buttons";
+                                         "buttons buttons";                         
                 }
+                @media (max-width: 1160px){
+                    flex-direction: column-reverse;
+                    grid-template-columns: 227px 16px;
+                    grid-template-rows: 163px 30px 41px 50px 74px auto;
+                    grid-template-areas: "photo btnClose"
+                                         "categoryText categoryText"
+                                         "smartphoneName ."
+                                         "costs costs"
+                                         "buttons buttons";    
+                                    }
                 .btn-close{
                     grid-area: btnClose;
                     justify-self: end;
@@ -210,12 +226,12 @@
                     }
                 }
                 .buttons{
-                    // margin-left: 29px;
                     grid-area: buttons;
                     display: flex;
-                    // @media (max-width: 1440px){
-                    //     margin: 0;
-                    // }
+                    @media (max-width: 1160px){
+                        flex-direction: column-reverse;
+                        justify-content: space-around;
+                    }
                     .intoTheBasket-button{
                         width: 114px;
                         height: 37px;
@@ -235,6 +251,9 @@
                         display: flex;
                         align-items: center;
                         cursor: pointer;
+                        @media (max-width: 1160px){
+                            margin: 0;
+                        }
                         .toBuy-button-text{
                             margin-left: 10px;
                             font-family: Montserrat;
@@ -246,31 +265,12 @@
                     }
                 }
             }
-            .product-one{
-                // // position: absolute;
-                // left: 357px;
-                // @media (max-width: 1440px) {
-                //     left: 340px;
-                // }
-            }
-            .product-two{
-                // position: absolute;
-                // left: 935px;
-                // @media (max-width: 1440px) {
-                //     left: 710px;
-                // }
-            }
         }
         .page-comparison__line{
             margin-top: 38px;
-            margin-bottom: 10;
             height: 1px;
             width: 100%;
             background-color: #E5E5E5;
-            @media (max-width: 1440px) {
-                margin-top: 180px;
-                
-            }
         }
     }
 }

@@ -2,8 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    // background-color: #4a7db8;
-    // font-family: 'Montserrat', sans-serif;
 }
 // Ограничивающий контейнер 1520px
 .container{
@@ -13,6 +11,9 @@
     padding-right: 15px;
     @media (max-width: 1440px){
         max-width: 1110px;
+    }
+    @media (max-width: 1160px){
+        max-width: 880px;
     }
 }
 
