@@ -357,3 +357,7 @@
   line-height: 17px;
   color: #000000;
 }
+
+.page-comparison__footer .page-comparison__product {
+  margin: 0 auto;
+}
